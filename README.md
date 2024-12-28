@@ -1,6 +1,6 @@
 ---
 
-Minecraft Software Installer
+# Minecraft Software Installer
 
 
 Minecraft Software Installer is a powerful and interactive Bash script by XreatLabs that simplifies the installation process for various Minecraft server software. It provides dynamic version selection, automatic setup, and an intuitive user interface with branding.
@@ -8,7 +8,7 @@ Minecraft Software Installer is a powerful and interactive Bash script by XreatL
 
 ---
 
-Features
+# Features
 
 Supports Multiple Server Types:
 
@@ -41,7 +41,7 @@ Cross-Platform: Works on Linux, macOS, and any Bash-supported system.
 
 ---
 
-Installation
+# Installation
 
 1. Clone the repository:
 
@@ -70,7 +70,7 @@ brew install curl jq          # For macOS
 
 ---
 
-Usage
+# Usage
 
 1. Launch the installer:
 
@@ -90,12 +90,12 @@ Usage
 
 ---
 
-Supported Minecraft Server Software
+# Supported Minecraft Server Software
 
 
 ---
 
-Customization
+# Customization
 
 The script is written in Bash and can be easily modified to suit your needs.
 
@@ -105,7 +105,7 @@ Add or update server software by modifying the corresponding functions in xreatl
 
 ---
 
-Contributing
+# Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -134,21 +134,21 @@ git push origin feature/your-feature-name
 
 ---
 
-License
+# License
 
 This project is licensed under the MIT License.
 
 
 ---
 
-Issues
+# Issues
 
 If you encounter any issues, please report them here.
 
 
 ---
 
-Credits
+# Credits
 
 Developed and maintained by XreatLabs.
 
