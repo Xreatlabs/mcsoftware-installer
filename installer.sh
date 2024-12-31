@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear 
-# Function to display the XreatLabs logo
+
 display_logo() {
     clear
     echo "=============================================="
@@ -18,7 +18,6 @@ display_logo() {
     echo "=============================================="
 }
 
-# Function to display the menu
 show_menu() {
     display_logo
     echo "Choose a Minecraft Server Software to Install:"
@@ -35,13 +34,11 @@ show_menu() {
     read -p "Enter your choice [1-9]: " choice
 }
 
-# Function to fetch available versions
 fetch_versions() {
     local url=$1
     curl -s "$url" | jq -r '.[]' | sort -V
 }
 
-# Function to download a file
 download_file() {
     local url=$1
     local output=$2
@@ -49,7 +46,6 @@ download_file() {
     curl -o "$output" -L "$url" --progress-bar
 }
 
-# Function to install Paper
 install_paper() {
     display_logo
     echo "Fetching available Paper versions..."
@@ -67,7 +63,6 @@ install_paper() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install Purpur
 install_purpur() {
     display_logo
     echo "Fetching available Purpur versions..."
@@ -85,7 +80,6 @@ install_purpur() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install PocketMine-MP
 install_pocketmine() {
     display_logo
     echo "Installing PocketMine-MP..."
@@ -98,7 +92,6 @@ install_pocketmine() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install Forge
 install_forge() {
     display_logo
     echo "Installing Forge..."
@@ -111,7 +104,6 @@ install_forge() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install Fabric
 install_fabric() {
     display_logo
     echo "Installing Fabric..."
@@ -123,7 +115,6 @@ install_fabric() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install Velocity
 install_velocity() {
     display_logo
     echo "Installing Velocity..."
@@ -135,7 +126,6 @@ install_velocity() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install Waterfall
 install_waterfall() {
     display_logo
     echo "Installing Waterfall..."
@@ -147,7 +137,6 @@ install_waterfall() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Function to install BungeeCord
 install_bungee() {
     display_logo
     echo "Installing BungeeCord..."
@@ -159,7 +148,7 @@ install_bungee() {
     read -p "Press Enter to return to the main menu..."
 }
 
-# Main menu loop
+# Main menu
 while true; do
     show_menu
     case $choice in
